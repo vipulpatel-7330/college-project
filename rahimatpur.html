@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="ytc.png" alt="Yashoda College" style="width: 100%; ;">
+
+<h1>Bus Route - RAHIMATPUR</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Stop No.</th>
+            <th>Stop Name</th>
+            <th>Bus Time</th>
+            <th>Yearly Fee</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rahimatpur Bus Stand</td>
+            <td>08:20 AM</td>
+            <td>&#8377; 20900</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vijay Nagar</td>
+            <td>08:40 AM</td>
+            <td>&#8377; 19800</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jihe</td>
+            <td>08:45 AM</td>
+            <td>&#8377; 18700</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Tasgav</td>
+            <td>08:50 AM</td>
+            <td>&#8377; 18150</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Gojegav - Brahmanwadi</td>
+            <td>09:00 AM</td>
+            <td>&#8377; 17600</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Jaitapur - Chinchner Vandan</td>
+            <td>09:05 AM</td>
+            <td>&#8377; 15400</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Ganesh Chowk - Manik Nagar</td>
+            <td>09:10 AM</td>
+            <td>&#8377; 12650</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Degav Phata - Bhandari Height</td>
+            <td>09:30 AM</td>
+            <td>&#8377; 12100</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Yashoda Campus</td>
+            <td>09:45 AM</td>
+            <td> </td>
+        </tr>
+        <!-- Additional rows... -->
+    </tbody>
+</table>
+<br>
+<h3>Bus Driver Details</h3>
+<p>Mr. Rajendra Khandagle</p>
+<P>+91 9850588806</P>
+
+<div class="button-container">
+    <!-- Go Back Button -->
+    <button class="btn btn-back" onclick="goBack()">Go Back</button>
+    <!-- Pay Fee Button -->
+    <button class="btn btn-pay" onclick="payFee()">Pay Fee</button>
+    <!-- Live location tracking Button -->
+    <button class="btn btn-redirect" onclick="redirectToTracking()">Bus Live Tracking</button>
+</div>
+
+
+<script >
+    // Function to handle "Go Back" button click
+    function goBack() {
+        window.location.href = 'home.html';  // Redirects to the Home Page (index.html)
+    }
+
+    // Function to handle "Pay Fee" button click
+    function payFee() {
+        alert("Payment process started for the yearly fee.");
+    // Redirect to google.com after the alert
+        window.location.href = "https://easebuzz.in/pay/YashodafrtvY";
+    }
+    
+    function redirectToTracking() {
+        // Redirect to the tracking page
+        window.location.href = "tracking.html"; 
+    }
+
+</script>
+
+</body>
+</html>

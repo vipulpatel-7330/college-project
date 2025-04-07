@@ -1,0 +1,157 @@
+/* Basic styles for the pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Card styles */
+.card {
+    width: 8%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-heading {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 7px 0;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Table styles for Bus Route Details */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+/* Button Styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-back {
+    background-color: #f44336;
+}
+
+.btn-back:hover {
+    background-color: #e53935;
+}
+
+.btn-pay {
+    background-color: #2196F3;
+}
+
+.btn-pay:hover {
+    background-color: #1e88e5;
+}
+
+.btn-redirect {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-redirect:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 1180px) {
+    .card {
+        width: 25%;
+    }
+}
+@media (max-width: 500px) {
+    .card {
+        width: 40%;
+    }
+}
+@media (max-width: 300px) {
+    .card {
+        width: 100%;
+    }
+}

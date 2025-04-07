@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="ytc.png" alt="Yashoda College" style="width: 100%; ;">
+
+<h1>Bus Route - Satara Road</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Stop No.</th>
+            <th>Stop Name</th>
+            <th>Bus Time</th>
+            <th>Yearly Fee</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Satara Road Bus Stand</td>
+            <td>08:30 AM</td>
+            <td>&#8377; 18700</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bhimnagar Bus Stop</td>
+            <td>08:40 AM</td>
+            <td>&#8377; 17600</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dare tea tamb</td>
+            <td>08:45 AM</td>
+            <td>&#8377; 17050</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Shivthar</td>
+            <td>08:50 AM</td>
+            <td>&#8377; 13200</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Aarfal</td>
+            <td>09:00 AM</td>
+            <td>&#8377; 12650</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Vaduth</td>
+            <td>09:05 AM</td>
+            <td>&#8377; 12100</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Aarle</td>
+            <td>09:10 AM</td>
+            <td>&#8377; 12100</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Basappachi Vadi</td>
+            <td>09:15 AM</td>
+            <td>&#8377; 7700</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Wade Phata</td>
+            <td>09:30 AM</td>
+            <td>&#8377; 7700</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Yashoda Campus</td>
+            <td>09:45 AM</td>
+            <td> </td>
+        </tr>
+        <!-- Additional rows... -->
+    </tbody>
+</table>
+<br>
+<h3>Bus Driver Details</h3>
+<p>Mr. Atul Ghadge</p>
+<P>+91 9561513274</P>
+
+<div class="button-container">
+    <!-- Go Back Button -->
+    <button class="btn btn-back" onclick="goBack()">Go Back</button>
+    <!-- Pay Fee Button -->
+    <button class="btn btn-pay" onclick="payFee()">Pay Fee</button>
+    <!-- Live location tracking Button -->
+    <button class="btn btn-redirect" onclick="redirectToTracking()">Bus Live Tracking</button>
+</div>
+
+
+<script >
+    // Function to handle "Go Back" button click
+    function goBack() {
+        window.location.href = 'home.html';  // Redirects to the Home Page (index.html)
+    }
+
+    // Function to handle "Pay Fee" button click
+    function payFee() {
+        alert("Payment process started for the yearly fee.");
+    // Redirect to google.com after the alert
+        window.location.href = "https://easebuzz.in/pay/YashodafrtvY";
+    }
+    
+    function redirectToTracking() {
+        // Redirect to the tracking page
+        window.location.href = "tracking.html"; 
+    }
+
+</script>
+
+</body>
+</html>

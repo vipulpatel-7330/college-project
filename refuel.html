@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request for Refueling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group.inline {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        input[type="text"], input[type="number"], input[type="date"], input[type="time"], textarea, input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-group.inline {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Request for Refuel the Bus</h1>
+</header>
+
+<div class="container">
+    <form action="/submit-refuel-request" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="driver-name">Bus Driver Name:</label>
+            <input type="text" id="driver-name" name="driver-name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="bus-id">Bus ID / Number:</label>
+            <input type="text" id="bus-id" name="bus-id" required>
+        </div>
+
+        <div class="form-group inline">
+            <div class="flex-item">
+                <label for="fuel-amount">Fuel Amount (in Liters):</label>
+                <input type="number" id="fuel-amount" name="fuel-amount" required>
+            </div>
+            <div class="flex-item">
+                <label for="fuel-cost">Fuel Cost (in INR):</label>
+                <input type="number" id="fuel-cost" name="fuel-cost" required>
+            </div>
+        </div>
+
+        <div class="form-group inline">
+            <div class="flex-item">
+                <label for="refuel-date">Date of Refueling:</label>
+                <input type="date" id="refuel-date" name="refuel-date" required>
+            </div>
+            <div class="flex-item">
+                <label for="refuel-time">Time of Refueling:</label>
+                <input type="time" id="refuel-time" name="refuel-time" required>
+            </div>
+        </div>
+
+        <div class="form-group inline">
+            <div class="flex-item">
+                <label for="km-reading">Kilometer Reading at Refueling:</label>
+                <input type="number" id="km-reading" name="km-reading" required>
+            </div>
+            <div class="flex-item">
+                <label for="receipt-image">Upload Fuel Receipt with KM Reading</label>
+                <input type="file" id="receipt-image" name="receipt-image" accept="image/*">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="remarks">Remarks (if any):</label>
+            <textarea id="remarks" name="remarks"></textarea>
+        </div>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="ytc.png" alt="Yashoda College" style="width: 100%; ;">
+
+<h1>Bus Route - WAI</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Stop No.</th>
+            <th>Stop Name</th>
+            <th>Bus Time</th>
+            <th>Yearly Fee</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Wai Bus Stand</td>
+            <td>08:00 AM</td>
+            <td>&#8377; 22000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bavdhan Naka</td>
+            <td>08:05 AM</td>
+            <td>&#8377; 22000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Bazar Samiti</td>
+            <td>08:10 AM</td>
+            <td>&#8377; 22000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sahyadri Nagar</td>
+            <td>08:15 AM</td>
+            <td>&#8377; 22000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Virat Nagar</td>
+            <td>08:25 AM</td>
+            <td>&#8377; 22000</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Vakeshwar</td>
+            <td>08:30 AM</td>
+            <td>&#8377; 21450</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Kadegav</td>
+            <td>08:35 AM</td>
+            <td>&#8377; 20900</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td> Vyahali </td>
+            <td>08:40 AM</td>
+            <td>&#8377; 20900</td>
+        </tr>
+        <tr>
+        <tr>
+            <td>9</td>
+            <td>Asale</td>
+            <td>08:45 AM</td>
+            <td>&#8377; 20900</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Kumbharwadi</td>
+            <td>08:50 AM</td>
+            <td>&#8377; 19800</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Bhuinj</td>
+            <td>09:00 AM</td>
+            <td>&#8377; 19800</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Pachwad</td>
+            <td>09:10 AM</td>
+            <td>&#8377; 19250</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Udtare</td>
+            <td>09:25 AM</td>
+            <td>&#8377; 17050</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Anewadi Toll Naka</td>
+            <td>09:30 AM</td>
+            <td>&#8377; 16500</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Limb Phata</td>
+            <td>09:35 AM</td>
+            <td>&#8377; 13200</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>KBP College, Limb Khind</td>
+            <td>09:40 AM</td>
+            <td>&#8377; 11000</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Yashoda Campus</td>
+            <td>09:45 AM</td>
+            <td> </td>
+        </tr>
+        <!-- Additional rows... -->
+    </tbody>
+</table>
+<br>
+<h3>Bus Driver Details</h3>
+<p>Mr. Rajendra Bhosale</p>
+<P>+91 9921216815</P>
+<p>Mr. Babaso Kadam</p>
+<P>+91 9921299010</P>
+
+<div class="button-container">
+    <!-- Go Back Button -->
+    <button class="btn btn-back" onclick="goBack()">Go Back</button>
+    <!-- Pay Fee Button -->
+    <button class="btn btn-pay" onclick="payFee()">Pay Fee</button>
+    <!-- Live location tracking Button -->
+    <button class="btn btn-redirect" onclick="redirectToTracking()">Bus Live Tracking</button>
+</div>
+
+
+<script >
+    // Function to handle "Go Back" button click
+    function goBack() {
+        window.location.href = 'home.html';  // Redirects to the Home Page (index.html)
+    }
+
+    // Function to handle "Pay Fee" button click
+    function payFee() {
+        alert("Payment process started for the yearly fee.");
+    // Redirect to google.com after the alert
+        window.location.href = "https://easebuzz.in/pay/YashodafrtvY";    
+    }
+    
+    function redirectToTracking() {
+        // Redirect to the tracking page
+        window.location.href = "tracking.html"; 
+    }
+
+</script>
+
+</body>
+</html>
